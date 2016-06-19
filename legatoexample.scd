@@ -1,1 +1,1 @@
-Pbind(\legato, 0.9).play;
+Pbind(\degree, Pwhite(0, 10), \legato, 100, \dur, 1).play;
