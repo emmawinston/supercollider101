@@ -42,3 +42,5 @@ t = TempoClock(76/60);
     ).play(t);
 }.fork(t);
 )
+
+//fork is useful for stringing together statements with wait times in between - you can only wait inside a fork.
