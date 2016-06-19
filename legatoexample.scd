@@ -1,0 +1,1 @@
+Pbind(\legato, 0.9).play;
