@@ -66,3 +66,13 @@ Pbind(
 	\amp, [0.2, 0.01, 0.01]
 ).play
 )
+
+//Pbind random scales
+(
+Pbind(
+	\scale, Scale.major, //only works if using key degree
+	\degree, Prand([0,1,2,3,4,5,6,7], inf),
+	\dur, 0.2,
+	\amp, [0.2, 0.01, 0.01]
+).play
+)
