@@ -86,3 +86,24 @@ Pbind(
 	\amp, 0.1
 ).trace.play;
 )
+
+
+
+//polyrhythms
+(
+Pbind(
+	\scale, Scale.major,
+	\note, Pwhite(-5, 10.5),
+	\dur, 0.7,
+	\amp, 0.1
+).play;
+)
+
+(
+Pbind(
+	\scale, Scale.major,
+	\note, Pwhite(-5, 10.5),
+	\dur, 0.2,
+	\amp, 0.1
+).play;
+)
