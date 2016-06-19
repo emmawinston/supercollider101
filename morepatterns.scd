@@ -72,8 +72,17 @@ Pbind(
 Pbind(
 	\scale, Scale.major, //only works if using key degree
 	\degree, Prand([0,1,2,3,4,5,6,7], 4), //no concept of sequence here, pick this many items
-	\dur, 0.2,
+	\dur, Prand([0.2, 0.1], inf),
 	\amp, [0.2, 0.01, 0.01]
 ).play
 )
 
+//Pbind ranges
+(
+Pbind(
+	\scale, Scale.major,
+	\degree, Prand([0,1,2,3,4,7], inf),
+	\dur, Pwhite(0.2, 0.5),
+	\amp, 0.1
+).trace.play;
+)
