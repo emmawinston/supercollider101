@@ -63,6 +63,6 @@ Pbind(
 	\ctranspose, [1, 5, 9], //actually transposes to d major - chromatic transpose
 	\degree, Pseq([0,1,2,3,4,5,6,7], inf),
 	\dur, 0.2,
-	\amp, 0.2
+	\amp, [0.2, 0.01, 0.01]
 ).play
 )
