@@ -8,6 +8,10 @@
 //cmd shift p clears the post window
 
 // patterns
+//middle c as default
+//default amp 0.2
+//default dur 1bps
+//default instr "piano"
 
 //pbind playing middle c
 Pbind().play;
@@ -24,8 +28,13 @@ Pbind(\degree, 3, \dur, 0.2, \octave, 4).play;
 // pbind playing f
 Pbind(\degree, -5, \dur, 0.1, \octave, 5, \amp, 1).play;
 
-//pbind chord
-Pbind(\degree, [0,3,5,7,8], \amp, 0.2, \dur, 0.2).play;
+//pbind chord - put brackets around if you want to be able to tab
+(Pbind( //code block
+	\degree, [0,3,5,7,8],
+	\amp, 0.2,
+	\dur, 0.2
+).play;
+)
 
 //degree 2s or 2b works as sharp or flat
 
