@@ -48,3 +48,5 @@ Pbind(
 t.tempo = 239/60; //this is a method
 
 )
+
+//what's an object? Pbind, pattern, family is an object, tempoclock is too
