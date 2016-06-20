@@ -14,7 +14,10 @@ Pbind(
 (
 Pbind(
 	\freq, Pseq( [1/1, 3/2, 4/3, 9/8, 16/9, 5/4, 8/5], 1) * 440 + Pwhite(10.0, 20.0),
-	\dur, Pseq([Pseq([0.2, 0.4], 2)], Pseq([0.3, 0.3, 0.6]), 3)
+	\dur, Pseq([
+		Pseq([0.2, 0.4], 2),
+	    Pseq([0.3, 0.3, 0.6], 1)
+    ], 3)
 ).play;
 )
 
@@ -35,8 +38,17 @@ Pbind(
 
 (
 Pbind(
-	\freq, Pseq( [1/1, 3/2, 4/3, 9/8, 16/9, 5/4, 8/5], 1) * 440,
-	\dur, Prand([0.2, 0.4, 0.3], inf)
-).play;
+	\tempo, 60/60,
+	\freq, Pseq( [1/1, 3/2, 4/3, 9/8, 16/9, 5/4, 8/5], inf) * 55 * [1, 2],
+	\dur, Pseq([Pn(1/2, 4), 3/4, 3/4, 1/2], inf) / 2,
+	\legato, 0.2
+).play(quant: 1);
 )
 
+
+(
+Pbind(
+	\degree, Pseq([0, 1, 7, 8], inf),
+	\dur, 1,
+).play(quant: 1);
+)
