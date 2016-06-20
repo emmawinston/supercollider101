@@ -37,6 +37,6 @@ Pbind(\emma, (wow).postln).play //doesn't do anything
 
 (
 var wow = 100;
-Pbind(\bruno, Pfunc({wow.postln})).play
+Pbind(\bruno, Pfunc({wow.postln})).play //still not sure what the difference between these is
 )
 
