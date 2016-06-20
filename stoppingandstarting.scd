@@ -7,6 +7,19 @@ p = Pbind(
 );
 )
 
+(
+t = TempoClock(30/60);
+{
+	"hi everyone".postln;
+	2.wait;
+	~bruno = p.play;
+	4.wait;
+	~bruno.stop;
+	2.wait;
+	"bye everyone".postln;
+}.fork(t);
+)
+
 ~bruno = p.play;
 
 ~bruno.stop;
