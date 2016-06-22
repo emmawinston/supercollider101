@@ -2,8 +2,12 @@
 
 (
 SynthDef("wow", { arg freq = 415, amp = 0.4;
+
+	var snd;
+	snd = Pulse.ar(freq: freq, mul: amp);
+
 	// Send OUT to speaker 0 (left) this thing (sine wave)
-	Out.ar(0, Saw.ar(freq: freq, mul: amp))
+	Out.ar(0, [snd, snd]) // or snd ! 2
 }).add;
 )
 
