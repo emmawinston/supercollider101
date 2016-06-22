@@ -28,3 +28,9 @@
 //EXERCISE: Write a line of code that plays a sine wave, frequency controlled by an LFPulse.kr with appropriate arguments. Then use range to scale the output of LFPulse.
 
 {SinOsc.ar(freq: LFPulse.kr(30).range(440,1600))}.play;
+
+
+//scaling with mul and add
+{SinOsc.kr(1).range(100,200).poll}.play;
+//same as
+{SinOsc.kr(1, mul: 50, add: 150).poll}.play;
