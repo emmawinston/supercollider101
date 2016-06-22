@@ -14,3 +14,5 @@ SynthDef("temp", {Out.ar(0, SinOsc.ar(415)) }).add;
 Synth("temp");
 
 //not sure if understood or not
+
+{Saw.ar}.plot;
