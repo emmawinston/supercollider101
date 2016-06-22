@@ -42,3 +42,5 @@ rrand(33, 67);
 100.0.rand.round(0.01).dup(4); //receiver
 //convert to functional
 dup(round(rand(100.0), 0.01), 4);
+
+// cmd+d for documentation takes you to help file when cursor is over the word.
