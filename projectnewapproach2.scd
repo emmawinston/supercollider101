@@ -105,7 +105,7 @@ Pspawner({ arg sp;
 	~drums1 = sp.par(~hihat);
 	~drums2 = sp.par(~kick);
 	~drums3 = sp.par(~snare);
-	sp.wait(2);
+	sp.wait(1);
 
 	~player = sp.seq(~loop);
 	~lastplayer = sp.seq(~end);
