@@ -4,7 +4,7 @@
 SynthDef("wow", { arg freq = 415, amp = 0.4;
 
 	var snd;
-	snd = Pulse.ar(freq: freq, mul: amp);
+	snd = Pulse.ar(freq: freq + MouseX.kr(-10, 10), mul: amp);
 
 	// Send OUT to speaker 0 (left) this thing (sine wave)
 	Out.ar(0, [snd, snd]) // or snd ! 2
@@ -25,3 +25,5 @@ SynthDef("wow", { arg freq = 415, amp = 0.4;
 
 //view node tree
 s.plotTree;
+
+s.makeWindow;
