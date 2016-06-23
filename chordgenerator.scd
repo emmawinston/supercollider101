@@ -106,7 +106,9 @@ p = Pfsm([
 
 
 // last chord
-t = Pbind(\note, Prand([[0, 5, 9],[-1, 2, 7]], 1));
+t = Pbind(
+	\instrument, ~instrument,
+	\note, Prand([[0, 5, 9],[-1, 2, 7]], 1));
 
 (
 Pspawner({ arg sp;
