@@ -1,5 +1,3 @@
-//drums
-
 //Drums
 
 (

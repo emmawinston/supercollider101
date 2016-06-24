@@ -42,6 +42,12 @@ c = [
 
 a = List.new;
 
+
+//instead - create a counter. count up 1 through 4.
+//create a variable for current chord
+//while counter is less than 4 progress to next chord
+
+
 (
 //state machine for chords
 p = Pfsm([
